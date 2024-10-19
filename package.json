@@ -7,7 +7,7 @@
   "scripts": {
      "start": "node server.js",
      "dev": "nodemon server.js",
-     "insertDataCities": "./models/data/cities.js"
+     "insertDataCities": "node ./models/data/cities.js"
   },
   "keywords": [],
   "author": "",
