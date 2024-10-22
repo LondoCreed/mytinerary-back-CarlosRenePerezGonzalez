@@ -2,28 +2,27 @@
 
 Este es el servidor backend para la aplicación web de viajes **MyTinerary**, desarrollado en **Node.js** con **Express.js**, **MongoDB** y otras herramientas. El servidor proporciona API endpoints para la gestión de ciudades y se conecta a una base de datos MongoDB para almacenar información.
 
-## Tecnologías Utilizadas
+## 🚀 Tecnologías Utilizadas
 
-- **Node.js**: Para el entorno de ejecución.
-- **Express.js**: Framework para la creación del servidor web.
-- **MongoDB**: Base de datos NoSQL utilizada para almacenar la información de las ciudades.
-- **Mongoose**: ODM para interactuar con MongoDB.
-- **Dotenv**: Manejo de variables de entorno.
-- **CORS**: Para manejar políticas de acceso de otros dominios.
-- **Morgan**: Logger de peticiones HTTP en desarrollo.
-- **Nodemon**: Herramienta de desarrollo para reiniciar automáticamente el servidor al detectar cambios.
-
+- **Node.js** - Entorno de ejecución
+- **Express.js** - Framework para servidor web
+- **MongoDB** - Base de datos NoSQL para almacenar información de ciudades
+- **Mongoose** - ODM para interactuar con MongoDB
+- **Dotenv** - Manejo de variables de entorno
+- **CORS** - Manejo de políticas de acceso entre dominios
+- **Morgan** - Registro de peticiones HTTP en desarrollo
+- **Nodemon** - Herramienta de desarrollo para reinicio automático del servidor
 
 >[!IMPORTANT]
 >
->## Requisitos previos
+>## 📋 Requisitos previos
 >
 >Asegúrate de tener instalados los siguientes programas:
 >
 >- **Node.js** (v14+)
->- **MongoDB** (puede ser una instancia local o remota)
+>- **MongoDB** (instancia local o remota)
   
-## Instalación
+## 🛠️ Instalación
 
 1. Clona este repositorio:
 
@@ -38,14 +37,15 @@ Este es el servidor backend para la aplicación web de viajes **MyTinerary**, de
    ```
 
 3. Instala las dependencias:
-
+   ```bash
+   npm install
+   ```
+   Instalación alternativa si es necesario:
    ```bash
    npm install express mongoose dotenv
    npm install --save-dev nodemon
-
-   {si no funciona por alguna razon puedes probar a usar 
-   npm install}
    ```
+
 >[!CAUTION]
 >4. Crea un archivo `.env` en la raíz del proyecto y agrega las siguientes variables:
 >
@@ -70,17 +70,17 @@ Este es el servidor backend para la aplicación web de viajes **MyTinerary**, de
    npm start
    ```
 >[!NOTE]
->## Endpoints
+>### Endpoints de Ciudades
 >
->### Tiendas
->
->- **GET /api/cities**: Obtiene la lista completa de ciudades.
->- **GET /api/cities/id/:id**: Obtiene una ciudad específica por su ID.
->- **POST /api/cities/create**: Crea una nueva ciudad en la base de datos.
+>| Método | Endpoint | Descripción |
+>|--------|----------|-------------|
+>| GET | `/api/cities` | Obtiene todas las ciudades |
+>| GET | `/api/cities/id/:id` | Obtiene una ciudad específica por ID |
+>| POST | `/api/cities/create` | Crea una nueva ciudad |
 
 >[!WARNING]
 >Las siguientes modificaran las bases de datos existentes, por lo que debes tener cuidado antes de ejecutar los comandos.
->## Scripts de datos
+>## 📥 Scripts de datos
 >
 >Para insertar datos de prueba en tu base de datos, puedes usar los siguientes comandos:
 >
@@ -100,6 +100,14 @@ Este es el servidor backend para la aplicación web de viajes **MyTinerary**, de
 >4. Envía un push a la rama (`git push origin feature/nueva-funcionalidad`).
 >5. Crea un Pull Request.
 
-## Licencia
+## 📝 Licencia
 
-Este proyecto está bajo la licencia ISC.
+Este proyecto está bajo la licencia ISC. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 📞 Contacto
+
+d.londocreed@gmail.com
+
+Carlos Rene Perez Gonzalez - [@LondoCreed](https://github.com/LondoCreed)
+
+Link del proyecto: [https://github.com/LondoCreed/mytinerary-back-CarlosRenePerezGonzalez](https://github.com/LondoCreed/mytinerary-back-CarlosRenePerezGonzalez)
