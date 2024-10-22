@@ -1,6 +1,6 @@
 import { Router } from "express"
-import { allCities, citiesById } from "../controllers/city/read.js"
-import { createCity } from "../controllers/city/create.js"
+import { allCities, citiesById } from "../controllers/cities/read.js"
+import { createCity } from "../controllers/cities/create.js"
 
 const routerCity = Router()
 

@@ -3,7 +3,15 @@ import City from '../../models/City.js'
 
 let allCities = async (req, res, next) => {
     try {
-      let cities = await City.find()
+      let {name} = req.query
+      let query= {}
+
+      if (name)
+      {
+        query.name = { $regex: '^' + name, $options: 'i' }
+      }
+
+      let cities = await City.find(query)
       return res.status(200).json({
         response: cities,
       })
