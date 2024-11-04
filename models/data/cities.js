@@ -189,7 +189,7 @@ let cities = [
 
 City.insertMany(cities).then(() => {
     console.log("Cities inserted successfully.")
-    /* mongoose.connection.close() */
+    
 })
 .catch((error) => {
     console.error("Error inserting cities:", error)
